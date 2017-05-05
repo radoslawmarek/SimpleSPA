@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div>
+            <button onclick="loadFirstPage()">Załaduj pierwszą</button>
+            <button onclick="loadSecondPage()">Załaduj pierwszą</button>
+            <button onclick="loadThirdPage()">Załaduj pierwszą</button>
+        </div>
+
+        <div id="content" style="margin: 25px;"></div>
+
+        <script>
+            function loadFirstPage() {
+                var contentElement = document.getElementById("content");
+                contentElement.innerHTML = "<span>Strona pierwsza</span>";
+            }
+
+            function loadSecondPage() {
+                var contentElement = document.getElementById("content");
+                contentElement.innerHTML = "<span>Strona druga</span>";
+            }
+
+            function loadThirdPage() {
+                var contentElement = document.getElementById("content");
+                contentElement.innerHTML = "<span>Strona trzecia</span>";
+            }
+        
+        </script>
+    </body>
+</html>
